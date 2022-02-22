@@ -36,7 +36,7 @@ header img {
     height: 20px;
 }
 
-.navegation a {
+.navigation a {
     color: white;
     border-radius: 20px;
     font-weight: 500;
@@ -47,11 +47,11 @@ header img {
 
 }
 
-.navegation a:not(:last-child){
+.navigation a:not(:last-child){
     margin-right: 30px;
 }
 
- .navegation a:hover{
+ .navigation a:hover{
      background: brown;
  }
 
@@ -102,18 +102,68 @@ header img {
      color: rgb(255, 255, 255);
  }
 
-.media.icons {
+
+.media-icons {
+    margin-right:10px;
     display: flex;
-    
-    
+    align-items: center;
+    justify-content: flex-end;
+       
 }
 
-i {
+.media-icons a{
+    position: relative;
+    margin-right: 10px;
     color: brown;
-    
+    font-size: 25px;
 }
 
+ i {
+    color:white
+}
 
+label{
+    display: none; 
+}
+
+#check{
+    z-index: 3;
+}
+
+@media (max-width: 960px) {
+        .navigation{
+        display: none;
+    }
+    label{
+        display: block;
+        font-size: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+    
+    label i:hover {
+        color: brown;
+    }
+    
+    label  #times{
+        display: none;
+    }
+    
+    #check:checked ~ header.navigation {
+        z-index: 2;
+        position:fixed;
+        background: rgba(127, 42, 0, 0.813);
+        top:1; 
+        bottom:1;
+        left:1;
+        right:1;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:  center;
+    }
+}
 
 
 
