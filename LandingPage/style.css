@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: black url("img/bg-site.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+header{
+    position: relative;
+    top: 0;
+    padding: 30px 100px;
+    display: Flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header img {
+    position: relative;
+    height: 20px;
+}
+
+.navegation a {
+    color: white;
+    border-radius: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 2px 15px;
+    transition: 0.3s;
+    transition-property: background;
+
+}
+
+.navegation a:not(:last-child){
+    margin-right: 30px;
+}
+
+ .navegation a:hover{
+     background: brown;
+ }
+
+ .content {
+     max-width: 650px;
+     margin: 100px 100px;
+     color: white;
+ }
+
+ .content .info h2{
+    font-family: 'Secular One', sans-serif;
+    font-size: 35pt;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+ }
+
+ h2 span{
+     color: brown;
+     font-size: 40pt;
+ }
+
+ .content .info p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 40px;
+
+ }
+
+ .content .info-btn{
+     color: white;
+     background: brown;
+     text-transform: uppercase;
+     font-weight: 900;
+     letter-spacing: 2px;
+     padding: 10px 20px;
+     border-radius: 50px;
+
+ }
+
+ 
+
+
+
+
