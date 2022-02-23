@@ -13,7 +13,7 @@
 body{
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -36,6 +36,10 @@ header{
 header img {
     position: relative;
     height: 20px;
+}
+
+main{
+    height: 85vh;
 }
 
 .btn-bars{
@@ -128,11 +132,15 @@ header img {
     color:white
 }
 
+i:hover{
+    font-size: 30px;
+}
+
 label{
     display: none; 
 }
 
-@media (max-width: 1024px){
+@media(max-width: 1024px){
         .navigation{
         position:fixed;
         z-index: 1000;
@@ -140,27 +148,69 @@ label{
         inset: 0 0 0 55%;
         display: flex;
         flex-direction: column;
-        padding: 10rem 2em;
+        padding: 100px 5px ;
         line-height: 30px;
 
        transform: translateX(100%);
+       transition: 350ms ease-in-out;
 
     }
 
-    .navigation[data-visible="true"] {
+    .navigation[data-visible="true"]{
         transform: translateX(0%);
     }
 
-    .btn-bars {
+    .btn-bars{
         position: absolute;
         display: block;
         z-index: 9999;
-        background: url(img/white-bars.svg) no-repeat;
-        width: 20px;
-        height: 20px;
-        top: 20px;
-        right: 30px;
-        border: 0;
+        background-color: transparent;
+        background-image: url(img/white-bars.svg);
+        background-repeat: no-repeat;
+        width:20px;
+        height:20px;
+        top:20px;
+        right:20px;
+        border:0;
+    }
+
+    .btn-bars:hover{
+        background-color: transparent;
+        background-image: url(img/bars-solid_hover.svg);
+        background-repeat: no-repeat;
+    }
+
+    .btn-bars[aria-expanded= "true"] {
+        background-image: url(img/xmark-solid-white.svg);
+    }
+
+
+    header.logo{
+        position: absolute;
+
+    }
+
+
+
+    .content .info h2 {
+        font-size: 30pt;
+        line-height: 60px;
+
+
+    }
+
+    .content .info h2 span{
+        font-size: 30pt;
+        
+    }
+
+    .content .info p{
+        font-size: 14pt;
+
+    }
+
+    footer{
+        margin: auto;
     }
 }
 
