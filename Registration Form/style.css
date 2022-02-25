@@ -35,9 +35,21 @@ body {
     color: #FF6A88;
 }
 
-div.submit {
-    border: 0px;
-    background:linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+div.userdetails{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content:space-between;
+    line-height:30px;
+}
+
+div.boxinput{
+    width: calc(100% / 2 - 0px);
+
+}
+
+.boxinput input{
+    height: 30px;
+    width: 300px;
 }
 
 .gender{
