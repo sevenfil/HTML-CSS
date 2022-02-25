@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="password.js"></script>
     <title>Registration Form</title>
-
 </head>
 <body>
     <div class="container">
@@ -39,23 +39,24 @@
                     <input type="text" id="fname" placeholder="Confirm your password" required>
                 </div><br><br>
             </div>
-            <label for="job">You are a</label>
-            <select name="job" id="job" required>
-                <option value="teacher"> Teacher</option>
-                <option value="student"> Student</option>
-                <option value="school"> School</option>
-                <option value="other"> Other</option>
-            </select> 
-            <br><br>
+            <div class="boxjob">
+                <label for="job">You are a</label>
+                <select name="job" id="job" required>
+                    <option value="teacher"> Teacher</option>
+                    <option value="student"> Student</option>
+                    <option value="school"> School</option>
+                    <option value="other"> Other</option>
+                </select>
+            </div>
                 <div>
-                    <span>Gender</span>
+                    <span id="gender">Gender</span>
                 </div>
             <div class="gender">
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
+                <input type="radio" id="female" name="gender" value="female"><br>
                 <label for="female">Female</label><br>
-                <input type="radio" id="pref" name="gender" value="pref">
+                <input type="radio" id="pref" name="gender" value="pref"><br>
                 <label for="pref">prefer not to say</label><br><br>
             </div>   
                 <div class="button">
