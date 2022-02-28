@@ -48,17 +48,28 @@
                     <option value="other"> Other</option>
                 </select>
             </div>
-                <div>
-                    <span id="gender">Gender</span>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1" class="hide">
+                    <input type="radio" name="gender" id="dot-2" class="hide">
+                    <input type="radio" name="gender" id="dot-3" class="hide">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot_one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot_two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot_three"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
                 </div>
-            <div class="gender">
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female"><br>
-                <label for="female">Female</label><br>
-                <input type="radio" id="pref" name="gender" value="pref"><br>
-                <label for="pref">prefer not to say</label><br><br>
-            </div>   
+                
+                
                 <div class="button">
                     <input type="Submit" value="Resgister">
                 </div>

@@ -33,7 +33,7 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
-    color: #FF6A88;
+    color: #ff6a88;
 }
 
 div.userdetails{
@@ -62,20 +62,69 @@ div.boxinput{
     padding: 15px 0px;
 }
 
-#togglePassword{ 
-    cursor: pointer;
+.hide{
+    display: none;
 }
 
-#gender{
-    font-size: medium;
-    font-weight: 700;
+form .gender-details .category{
+    display:flex;
+    width: 65%;
+    margin: 14px 0;
+    justify-content: space-between;
 }
 
-.gender{
+.gender-title{
+    font-size: large;
+}
+
+.gender-details .category label{
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
+.gender-details .category .dot_one{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 5px solid transparent;
+}
+
+#dot-1:checked ~ .category  label .dot_one {
+    border-color: #d9d9d9;
+    background: #ff6a88;
+}
+
+.gender-details .category .dot_two{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 5px solid transparent;
+}
+
+#dot-2:checked ~ .category  label .dot_two{
+    border-color: #d9d9d9;
+    background: #ff6a88;
+    
+}
+
+.gender-details .category .dot_three{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 5px solid transparent;
+}
+
+#dot-3:checked ~ .category  label .dot_three{
+    border-color: #d9d9d9;
+    background: #ff6a88;
+    
+}
 .button{
 
     height: 45px;
@@ -89,8 +138,11 @@ div.boxinput{
     width: 400px;
     border-radius: 5px;
     border: 0px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family:'Ubuntu', sans-serif;
     font-size: large;
     color: white;
 }
 
+.button input:hover{
+    background: linear-gradient(90deg, #FF9A8B 10%, #FF6A88 55%, #FF99AC 90%);
+}
