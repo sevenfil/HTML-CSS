@@ -62,6 +62,10 @@ div.boxinput{
     padding: 15px 0px;
 }
 
+#togglePassword{ 
+    cursor: pointer;
+}
+
 #gender{
     font-size: medium;
     font-weight: 700;
@@ -75,9 +79,8 @@ div.boxinput{
 .button{
 
     height: 45px;
-    
-
-   
+    margin-left: 110px;  
+    padding-top: 30px; 
 }
 
 .button input{
