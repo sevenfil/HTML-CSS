@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+}
+
+.container{
+    background: white;
+    height: 600px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+
+
+.service_radio{
+    background: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.answer{
+    margin: 15px;
+}
+
+
+
